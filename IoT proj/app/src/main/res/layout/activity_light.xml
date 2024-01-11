@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".lightActivity">
+
+    <TextView
+        android:id="@+id/dT2"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@color/menuGreen"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/offButton2"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:background="@color/menuGreen"
+        android:onClick="offMessage"
+        android:text="Turn light OFF"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/lightIndicator"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="246dp"
+        android:background="@color/menuGreen"
+        android:onClick="onMessage"
+        android:text="Turn light ON"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/logButton"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="409dp"
+        android:background="@color/menuGreen"
+        android:onClick="showLogs"
+        android:text="Show logs"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/logText"
+        android:layout_width="235dp"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:background="@color/menuGreen"
+        android:text="Lights turned on at: \n 01/12/23 11.23 AM \n 01/12/23 4:20 PM \n 02/12/23 1.37 PM"
+        android:textAlignment="center"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

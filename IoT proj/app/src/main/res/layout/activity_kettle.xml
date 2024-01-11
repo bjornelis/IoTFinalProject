@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".kettleActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="142dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@color/menuGreen"
+        android:text="Kettle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/timerButton"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="477dp"
+        android:background="@color/menuGreen"
+        android:text="Set Timer"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="119dp"
+        android:background="@color/menuGreen"
+        android:hint="Enter time in minutes"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewCountdown"
+        android:layout_width="191dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="73dp"
+        android:background="@color/menuGreen"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/onButton"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="278dp"
+        android:background="@color/menuGreen"
+        android:text="Turn Kettle ON"
+        android:onClick="onMessage"/>
+
+    <Button
+        android:id="@+id/offButton"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="382dp"
+        android:background="@color/menuGreen"
+        android:text="Turn Kettle OFF"
+        android:onClick="offMessage"
+        />
+
+    <TextView
+        android:id="@+id/dynamicText"
+        android:layout_width="222dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/menuGreen"
+        android:text=""
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dT"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:background="@color/menuGreen"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>
